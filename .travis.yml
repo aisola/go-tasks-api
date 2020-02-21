@@ -1,0 +1,10 @@
+language: go
+go:
+  - 1.13.x
+  - master
+go_import_path: example.com/tasks
+sudo: false
+install: true
+script:
+  - go build ./cmd/tasks
+  - go tests ./...
